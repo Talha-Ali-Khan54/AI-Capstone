@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="settings-title">
+        <header class="card-header">
+          <h1 id="settings-title">Settings</h1>
+          <p>Update your account details and appearance preferences.</p>
+        </header>
+
+        <form id="settingsForm" novalidate>
+          <div class="field">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              autocomplete="name"
+              required
+              aria-describedby="fullNameError"
+            />
+            <p class="error" id="fullNameError" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-describedby="emailError"
+            />
+            <p class="error" id="emailError" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+              aria-describedby="passwordError"
+            />
+            <p class="error" id="passwordError" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              autocomplete="new-password"
+              required
+              aria-describedby="confirmPasswordError"
+            />
+            <p class="error" id="confirmPasswordError" aria-live="polite"></p>
+          </div>
+
+          <fieldset class="field theme-field" id="themeFieldset">
+            <legend>Theme <span class="required-mark" aria-hidden="true">*</span></legend>
+            <div class="theme-options" role="radiogroup" aria-describedby="themeError">
+              <label class="theme-option" for="themeLight">
+                <input
+                  type="radio"
+                  id="themeLight"
+                  name="theme"
+                  value="light"
+                  required
+                />
+                <span>Light</span>
+              </label>
+              <label class="theme-option" for="themeDark">
+                <input type="radio" id="themeDark" name="theme" value="dark" />
+                <span>Dark</span>
+              </label>
+            </div>
+            <p class="error" id="themeError" aria-live="polite"></p>
+          </fieldset>
+
+          <p class="success" id="successMessage" role="status" aria-live="polite" hidden>
+            Settings saved successfully.
+          </p>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Save Settings</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
