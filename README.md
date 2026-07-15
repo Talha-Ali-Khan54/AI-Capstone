@@ -1,8 +1,17 @@
 # AI Capstone
 
+> A hands-on capstone exploring AI-assisted software engineering with professional Git workflows.
+
 ## Overview
 
-This repository contains my AI-assisted software engineering capstone project.
+This repository documents an AI-assisted software engineering capstone project focused on using AI tools alongside professional Git practices.
+
+## Learning Objectives
+
+- Learn AI-assisted software development.
+- Practice professional Git workflows.
+- Use Conventional Commits.
+- Build software using modern development tools.
 
 ## Tech Stack
 
@@ -11,16 +20,30 @@ This repository contains my AI-assisted software engineering capstone project.
 - GitHub
 - Cursor AI
 
-## Goal
+## Getting Started
 
-Learn AI-assisted software development using professional Git workflows.
+### Prerequisites
 
-## Project Status
+- Node.js (LTS)
+- Git
+- Cursor (recommended)
 
-Project setup is in progress.
+## Project Structure
 
-## Installation
+AI-Capstone/
+├── README.md
+├── CLAUDE.md
+├── LICENSE
+└── .gitignore
 
-1. Clone the repository.
-2. Open it in Cursor.
-3. Start developing.
+## Roadmap
+
+- [x] Repository initialized
+- [x] Development conventions added
+- [ ] Project implementation
+- [ ] Testing
+- [ ] Final deployment
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
