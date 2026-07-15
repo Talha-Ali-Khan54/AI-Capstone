@@ -18,3 +18,9 @@ Learn AI-assisted software development using professional Git workflows.
 ## Project Status
 
 Project setup is in progress.
+
+## Installation
+
+1. Clone the repository.
+2. Open it in Cursor.
+3. Start developing.
