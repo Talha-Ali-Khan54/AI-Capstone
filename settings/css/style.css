@@ -124,7 +124,8 @@ input.invalid {
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.theme-option:hover {
+.theme-option:hover,
+.theme-option:focus-within {
   border-color: var(--primary);
 }
 

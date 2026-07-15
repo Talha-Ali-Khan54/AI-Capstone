@@ -24,6 +24,7 @@
               autocomplete="name"
               required
               aria-describedby="fullNameError"
+              aria-errormessage="fullNameError"
             />
             <p class="error" id="fullNameError" aria-live="polite"></p>
           </div>
@@ -37,6 +38,7 @@
               autocomplete="email"
               required
               aria-describedby="emailError"
+              aria-errormessage="emailError"
             />
             <p class="error" id="emailError" aria-live="polite"></p>
           </div>
@@ -51,6 +53,7 @@
               minlength="8"
               required
               aria-describedby="passwordError"
+              aria-errormessage="passwordError"
             />
             <p class="error" id="passwordError" aria-live="polite"></p>
           </div>
@@ -64,13 +67,20 @@
               autocomplete="new-password"
               required
               aria-describedby="confirmPasswordError"
+              aria-errormessage="confirmPasswordError"
             />
             <p class="error" id="confirmPasswordError" aria-live="polite"></p>
           </div>
 
           <fieldset class="field theme-field" id="themeFieldset">
-            <legend>Theme <span class="required-mark" aria-hidden="true">*</span></legend>
-            <div class="theme-options" role="radiogroup" aria-describedby="themeError">
+            <legend id="themeLegend">Theme <span class="required-mark" aria-hidden="true">*</span></legend>
+            <div
+              class="theme-options"
+              role="radiogroup"
+              aria-labelledby="themeLegend"
+              aria-describedby="themeError"
+              aria-required="true"
+            >
               <label class="theme-option" for="themeLight">
                 <input
                   type="radio"

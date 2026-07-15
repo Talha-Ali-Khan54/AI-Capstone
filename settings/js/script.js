@@ -15,8 +15,9 @@ const fields = {
     input: form.elements.email,
     error: document.getElementById("emailError"),
     validate(value) {
-      if (!value.trim()) return "Email address is required.";
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+      const trimmed = value.trim();
+      if (!trimmed) return "Email address is required.";
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
         return "Please enter a valid email address.";
       }
       return "";
@@ -138,7 +139,7 @@ Object.keys(fields).forEach((fieldName) => {
     input.addEventListener(eventName, () => {
       hideSuccessMessage();
 
-      if (fieldName === "password" && fields.confirmPassword.error.textContent) {
+      if (fieldName === "password") {
         validateField("confirmPassword");
       }
 
